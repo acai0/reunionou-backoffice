@@ -1,5 +1,4 @@
 <?php
-echo("OK");
 function test() {
 
     try {
