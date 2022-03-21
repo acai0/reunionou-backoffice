@@ -7,11 +7,10 @@
 
 namespace Slim\Exception;
 
-use Exception;
-use Psr\Http\Message\ResponseInterface;
+use InvalidArgumentException;
 use Psr\Http\Message\ServerRequestInterface;
 
-class SlimException extends Exception
+class InvalidMethodException extends InvalidArgumentException
 {
     /**
      * @var ServerRequestInterface
@@ -19,19 +18,13 @@ class SlimException extends Exception
     protected $request;
 
     /**
-     * @var ResponseInterface
-     */
-    protected $response;
-
-    /**
      * @param ServerRequestInterface $request
-     * @param ResponseInterface      $response
+     * @param string                 $method
      */
-    public function __construct(ServerRequestInterface $request, ResponseInterface $response)
+    public function __construct(ServerRequestInterface $request, $method)
     {
-        parent::__construct();
         $this->request = $request;
-        $this->response = $response;
+        parent::__construct(sprintf('Unsupported HTTP method "%s" provided', $method));
     }
 
     /**
@@ -40,13 +33,5 @@ class SlimException extends Exception
     public function getRequest()
     {
         return $this->request;
-    }
-
-    /**
-     * @return ResponseInterface
-     */
-    public function getResponse()
-    {
-        return $this->response;
     }
 }

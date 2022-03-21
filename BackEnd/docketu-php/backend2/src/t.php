@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: canals5
- * Date: 11/02/2020
- * Time: 16:52
- */
-
 function test() {
 
     try {
