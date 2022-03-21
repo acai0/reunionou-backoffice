@@ -3,6 +3,6 @@ use \reu\back\app\controller\CommandeController;
 use \reu\back\app\middleware\Middleware;
 require __DIR__ .'/../controller/CommandeController.php';
 require __DIR__ .'/../Middleware/Middleware.php';
-$app->get('/commandes/{id}[/]', CommandeController::class. ':getCommande')->setName('getCommande')->add(middleware::class. ':putIntoJson');
-$app->get('/commandes[/]', CommandeController::class. ':getAllCommande')->setName('getAllCommande')->add(middleware::class. ':putIntoJson');
+$app->get('/com/{id}[/]', CommandeController::class. ':getCommande')->setName('getCommande')->add(middleware::class. ':putIntoJson');
+$app->get('/com[/]', CommandeController::class. ':getAllCommande')->setName('getAllCommande')->add(middleware::class. ':putIntoJson');
 //$app->get('/commands[/]', CommandeController::class. ':getCommandeStatus')->setName('getCommandeStatus')->add(middleware::class. ':putIntoJson')->add(CommandeController::class. ':check');
