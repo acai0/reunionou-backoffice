@@ -5,9 +5,9 @@ namespace reu\back\app\controller;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
-use lbs\fab\app\models\Commande;
-use lbs\fab\app\errors\Writer;
-require __DIR__ .'/../models/Commande.php';
+use reu\back\app\models\Commande;
+use reu\back\app\errors\Writer;
+require __DIR__ .'/../models/Comment.php';
 require __DIR__ . '/../errors/Writer.php';
 class CommandeController
 {

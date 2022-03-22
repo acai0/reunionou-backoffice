@@ -5,7 +5,15 @@
 
         protected $table      = 'comment'; 
         protected $primaryKey = 'id';     
-        public    $timestamps = false;    
+        public    $timestamps = false;   
+
+        public function user(){
+            return $this->belongsTo('reu\back\models\User', 'id_user');
+        } 
+
+        public function event(){
+            return $this->belongsTo('reu\back\models\Event', 'id_event');
+        } 
 
     }
     /*public $table='commande';

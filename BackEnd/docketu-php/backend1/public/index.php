@@ -9,7 +9,7 @@ $config = require_once __DIR__ . '/../src/app/conf/settings.php';
 $dependencies = require_once __DIR__ . '/../src/app/conf/dependencies.php';
 $errors = require_once __DIR__ . '/../src/app/conf/errors.php';
 
-$app = new \Slim\App();
+//$app = new \Slim\App();
 //Une instance du conteneur de dépendance
 $c = new \Slim\Container(array_merge($config,$dependencies, $errors));
 $app = new \Slim\App($c);
