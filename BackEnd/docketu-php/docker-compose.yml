@@ -16,8 +16,8 @@ services:
     environment:
       - VHOST_HOSTNAME=docketu.iutnc.univ-lorraine.fr
       - VHOST_DOCROOT=/var/www/web
-      - http_proxy=http://www-cache.iutnc.univ-lorraine.fr:3128
-      - https_proxy=http://www-cache.iutnc.univ-lorraine.fr:3128
+     # - http_proxy=http://www-cache.iutnc.univ-lorraine.fr:3128
+      #- https_proxy=http://www-cache.iutnc.univ-lorraine.fr:3128
     ports:
       - "62640:80"
       - "19043:443"

@@ -2,7 +2,7 @@
 namespace reu\back\app\middleware;
 use  \Respect\Validation\Validator as V;
 
-class CommandeValidator{
+class ReuValidator{
 
     public static function create_validators(){
         //*tableau de validateurs

@@ -9,3 +9,7 @@
 [2022-03-22T09:18:21.513827+00:00] com.log.ERROR: error | 500 | Class 'reu\back\app\models\User' not found | /var/www/src/app/controller/ReuController.phpline: 30 [] []
 [2022-03-22T09:21:50.941872+00:00] com.log.ERROR: error | 500 | Class 'reu\back\app\models\User' not found | /var/www/src/app/controller/ReuController.phpline: 30 [] []
 [2022-03-22T09:22:11.314705+00:00] com.log.ERROR: error | 500 | Class 'reu\back\app\models\User' not found | /var/www/src/app/controller/ReuController.phpline: 30 [] []
+[2022-03-23T13:17:34.121350+00:00] com.log.ERROR: GET http://docketu.iutnc.univ-lorraine.fr:62640/ : malformed uri [] []
+[2022-03-23T13:17:47.049929+00:00] com.log.ERROR: GET http://docketu.iutnc.univ-lorraine.fr:62640/ : malformed uri [] []
+[2022-03-23T13:20:08.007474+00:00] com.log.ERROR: GET http://docketu.iutnc.univ-lorraine.fr:62640/ : malformed uri [] []
+[2022-03-23T13:36:24.594424+00:00] com.log.ERROR: GET http://docketu.iutnc.univ-lorraine.fr:62640/ : malformed uri [] []
